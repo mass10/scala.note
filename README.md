@@ -29,3 +29,15 @@ $ sudo apt-get install sbt
 ```
 $ sbt new sbt/scala-seed.g8
 ```
+
+> name [My Something Project]: hello123
+> 
+> Template applied in ./hello123
+
+実行
+
+```
+$ cd hello123
+$ sbt
+> run
+```
