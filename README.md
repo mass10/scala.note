@@ -1,6 +1,8 @@
-# scala.note
+# scala.note #################################
 
-# installing sbt on Ubuntu
+メモ
+
+# installing sbt on Ubuntu #################################
 
 Ubuntu や Debian-based なディストリビューションでは DEB が提供されているのでこれをインストール。
 
@@ -19,4 +21,11 @@ $ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 $ sudo apt-get update
 $ sudo apt-get install sbt
+```
+
+
+# sbt でプロジェクトを作成する #################################
+
+```
+$ sbt new sbt/scala-seed.g8
 ```
