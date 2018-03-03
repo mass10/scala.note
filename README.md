@@ -17,17 +17,17 @@ $ sudo apt-get install openjdk-8-jdk
 sbt をインストール↓。
 
 ```
-$ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
-$ sudo apt-get update
-$ sudo apt-get install sbt
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt-get update
+sudo apt-get install sbt
 ```
 
 
 # sbt でプロジェクトを作成する #################################
 
 ```
-$ sbt new sbt/scala-seed.g8
+sbt new sbt/scala-seed.g8
 ```
 
 > name [My Something Project]: hello123
@@ -37,7 +37,15 @@ $ sbt new sbt/scala-seed.g8
 実行
 
 ```
-$ cd hello123
-$ sbt
+cd hello123
+sbt
 > run
 ```
+
+もしくは
+
+```
+sbt run
+```
+
+> hello
